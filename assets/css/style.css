@@ -72,13 +72,14 @@ section img {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.card {
+.project {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
     padding: 10px;
     flex: 0 0 400px;
 }
+
