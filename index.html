@@ -16,11 +16,14 @@
       <h1>Welcome to my Portfolio!</h1>
 
       <!-- Navigation Bar -->
-      <div class="navigationBar">
+      <div>
         <a href="#aboutMe">About Me</a>
+      </div>
+      <div>
         <a href="#contactInfo">Contact Information</a>
+      </div>
         <div class="projectSection">
-          <a href="#projectSection">Projects</a>
+          <button class="dropbtn">Projects</button>
           <div class="dropdown-content">
             <a href="#codeRefactor">Code Refactor</a>
             <a href="#scratchGame">Cat & Mouse Scratch Game</a>
@@ -29,8 +32,10 @@
       </div>
     </header>
 
+    <!--Main Content-->
     <section class="container2">
       
+      <!--Left side section ~ About Me -->
       <aside class=item1Container2>
         <img style="height: 200px; width: 200px;" src="./assets/images/me-and-darwin-cropped.jpeg">
         <a href="#aboutMe">Biography</a>
@@ -41,156 +46,35 @@
       </aside>
 
       <main class="item2Container2">
+        
+        <div id="codeRefactor" class="codeRefactor">
+          <h3>Code Refactor</h3>
+          <img style="width: 200px; height: 400px;" src="assets/images/screenshot-code-refactor.png">
+        </div>
+
+        <div id="scratchGame" class="scratchGame">
+          <h3>Cat and Mouse Scratch Gamer</h3>
+          <img src="#">
+        </div>
+
+        <div id="comingSoon" class="comingSoon">    
+            <h3>Future Project</h3>   
+        </div>
 
       </main>
 
+      <!--Right side section ~ Contact Information -->
       <aside class="item3Container2">
         <h1>How to reach me:</h1> 
         <strong>Email: gautreauzoe@gmail.com</strong>
         <strong>Phone number: 1-(506)-874-3525</strong>
         <strong>Github: zoegautreau</strong>
-
       </aside>
 
+    </section>
 
-  </section>
-
-
-
-
-
-
-
-
-
-
-<!--
-              <aside id="contactInfo" class="contactInfo">
-                
-                <img src="./assets/images/me-and-darwin-cropped.jpeg" >
-                
-
-            </aside>
-        
-            <section id="projectSection" class="projectSection">
-
-                <div id="codeRefactor" class="codeRefactor">
-                    <h3>Code Refactor</h3>
-                    <img src="assets/images/screenshot-code-refactor.png">
-                </div>
-
-                <div id="scratchGame" class="scratchGame">
-                  <h3>Code Refactor</h3>
-                  <img src="assets/images/screenshot-code-refactor.png">
-                </div>
-
-                <div id="comingSoon" class="comingSoon">    
-                    <h3>Future Project</h3>   
-                </div> 
-            </section>
-        </main>
-        
-        <footer class="footer">
-            <h1>Thanks for visiting :)</h1>
-        </footer>
-    </body>
-</html>-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Responsive Web Design</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  </head>
-  <body>
-    
-    <header>
-        <h1>Welcome to the store!</h1>
-        <p>
-          When you change the screen size, the layout will change so you can view
-          the page comfortably no matter how small the screen gets!
-        </p>
-      </header>
-  
-      
-      <nav>
-        <a href="#">Camera</a>
-        <a href="#">Tablet</a>
-        <a href="#">Toilet Paper</a>
-        <a href="#">Wooden Spoons</a>
-      </nav>
-  
-      
-      <main>
-   
-        <aside>
-          <h2>When you change the screen size...</h2>
-          <p>The navbar and this sidebar will be stacked on top of each other!</p>
-          <p>
-            And the product cards will wrap around as the screen gets smaller.
-          </p>
-        </aside>
-    
-        <div class="products">
-          <section class="card">
-            <header>Camera</header>
-            <img src="./assets/images/camera.jpg" alt="black camera" />
-            <p>Price: $300</p>
-          </section>
-          <section class="card">
-            <header>Tablet</header>
-            <img src="./assets/images/tablet.jpg" alt="tablet held in hands" />
-            <p>Price: $150</p>
-          </section>
-          <section class="card">
-            <header>Toilet Paper</header>
-            <img
-              src="./assets/images/toilet-paper.jpg"
-              alt="rolls of toilet paper in a basket"
-            />
-            <p>Price: $30</p>
-          </section>
-          <section class="card">
-            <header>Wooden Spoons</header>
-            <img
-              src="./assets/images/wooden-spoons.jpg"
-              alt="4 wooden spoons with different seasonings"
-            />
-            <p>Price: $10</p>
-          </section>
-        </div>
-      </main>
-  
-   
-      <footer>
-        <h3>
-          Open Chrome DevTools - Toggle device toolbar - Resize the browser
-          window!
-        </h3>
-      </footer>
-    </body>
-  </html> -->
+    <footer class="footer">
+      <h1>Thanks for visiting :)</h1>
+    </footer>
+  </body>
+</html>
