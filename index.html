@@ -1,80 +1,125 @@
+<!DOCTYPE html>
 <html lang="en">
-
-  <head>
+    
+<head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Zoë Gautreau</title>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Zoe Gautreau's Portfolio</title>
+</head>
 
-  <body>
+<!--Body-->
+<body>
 
-    <!-- Header -->
-
-    <header class="container1">
-
-      <h1>Welcome to my Portfolio!</h1>
-
-      <!-- Navigation Bar -->
-      <div>
-        <a href="#aboutMe">About Me</a>
-      </div>
-      <div>
-        <a href="#contactInfo">Contact Information</a>
-      </div>
-        <div class="projectSection">
-          <button class="dropbtn">Projects</button>
-          <div class="dropdown-content">
-            <a href="#codeRefactor">Code Refactor</a>
-            <a href="#scratchGame">Cat & Mouse Scratch Game</a>
-            <a href="#comingSoon">Coming Soon...</a>
+    <!--Header:
+        Welcome to my Portfolio (center),
+        Zoe Gautreau (center underneath),
+        Nav bar ["About Me", "Contact Information", "Projects"]
+        Projects drop down menu with projects listed ["Code Refactor", "Scratch Game", "Coming soon"]-->
+    <header class="container1-header">
+        <div class="item1Container1-welcome">
+            <h1>Welcome to my Portfolio!</h1>
         </div>
-      </div>
+        
+        <strong class="item2Container1-name">Zoë Gautreau</strong>
+
+        <!--Navigation Bar:
+            About Me | Contact Information | Projects-->
+        <nav class="item3Container1-navBar">
+            <a href="#aboutMe">About Me</a>
+            <br>
+            <a href="#contactInfo">Contact Information</a>
+            <br>
+
+            <div class="dropdown">
+                <!--<button class="dropbtn">Dropdown</button>-->
+                <a href="#projects">Projects</a>
+                <div class="dropdown-content">
+                  <a href="#codeRefactor">Code Refactor</a>
+                  <a href="#scratchGame">Cat & Mouse Scratch Game</a>
+                  <a href="#comingSoon">Coming soon...</a>
+                </div>
+              </div>
+        </nav>
     </header>
 
-    <!--Main Content-->
-    <section class="container2">
-      
-      <!--Left side section ~ About Me -->
-      <aside class=item1Container2>
-        <img style="height: 200px; width: 200px;" src="./assets/images/me-and-darwin-cropped.jpeg">
-        <a href="#aboutMe">Biography</a>
-        <p>Zoe Gautreau</p>
-        <p>20 years old</p>
-        <p>Currently in: Moncton, NB, Canada</p>
-        <p>Software Engineer in the making</p>
-      </aside>
+    <main class="mainContentContainer">
+        <!--Main Section with Projects displayed-->
+        <section id="projects" class="container2-projects">
 
-      <main class="item2Container2">
-        
-        <div id="codeRefactor" class="codeRefactor">
-          <h3>Code Refactor</h3>
-          <img style="width: 200px; height: 400px;" src="assets/images/screenshot-code-refactor.png">
-        </div>
+            <!-- Code Refactor -->
+            <div id="codeRefactor" class="item1Container2-codeRefactor">
 
-        <div id="scratchGame" class="scratchGame">
-          <h3>Cat and Mouse Scratch Gamer</h3>
-          <img src="#">
-        </div>
+                <h2>Code Refactor</h2>
+                <h3>Project focused on accessibility</h3>
+                <p>
+                    <a href="https://zoegautreau.github.io/code-refactor-assignment/" target="_blank">
+                        <img src="assets/images copy/screenshot-code-refactor.png">
+                    </a>
+                </p>
+            </div>
 
-        <div id="comingSoon" class="comingSoon">    
-            <h3>Future Project</h3>   
-        </div>
+            <!-- Cat and Mouse Scratch game -->
+            <div id="scratchGame" class="item2Container2-scratchGame">
 
-      </main>
+                <h2>Space Kitty Scratch Game</h2>
+                <h3>Cat and Mouse game made with Scratch</h3>
+                <iframe src="https://scratch.mit.edu/projects/482961323/embed" target="_blank"  width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
 
-      <!--Right side section ~ Contact Information -->
-      <aside class="item3Container2">
-        <h1>How to reach me:</h1> 
-        <strong>Email: gautreauzoe@gmail.com</strong>
-        <strong>Phone number: 1-(506)-874-3525</strong>
-        <strong>Github: zoegautreau</strong>
-      </aside>
+            <!-- Coming Soon -->
+            <div id="comingSoon" class="item3Container2-comingSoon">
 
-    </section>
+                <img src="assets/images copy/coming-soon.jpg">
 
-    <footer class="footer">
-      <h1>Thanks for visiting :)</h1>
+            </div>
+        </section>
+
+        <!--Left side section "About Me" (desktop), container next to "Contact Info" (tablet), second container (mobile)-->
+        <section id="aboutMe" class="container3-aboutMe">
+
+            <!--Picture of Darwin and I-->
+            <div class="item1Container3-picture">
+                <img src="assets/images copy/me-and-darwin-cropped.jpeg">
+            </div>
+
+            <!--Short Bio-->
+            <div class="item2Container3-shortBio">
+
+                <p>20 years old. Moncton, NB. Full-stack developer in the making.</p>
+
+            </div>
+        </section>
+
+        <!--Right side section "Contact Information" (desktop), container next to "About Me" (tablet), third container (mobile)-->
+        <section id="contactInfo" class="container4-contactInfo">
+
+            <!--How to reach me-->
+            <div class="item1Container4-reachMe">
+                <img src="http://assets.stickpng.com/images/584856b4e0bb315b0f7675ac.png">
+                
+            </div>
+
+            <!--Links-->
+            <div class="item2Container4-links">
+                <h2> How to reach me:</h2>
+                <ul>
+                    <li>Email: gautreauzoe@gmail.com</li>
+                    <li>Phone #: (506)-874-3525</li>
+                    <li>Github: zoegautreau</li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="container5-footer">
+        <strong> Thank You For Visiting</strong>
+        <br>
+        <strong>Treat People With Kindness</strong>
     </footer>
-  </body>
+</body>
+
 </html>
