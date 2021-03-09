@@ -2,6 +2,7 @@ body {
     background-color: rgba(228, 238, 211, 0.884);
     font-family: Georgia, 'Times New Roman', Times, serif;
     justify-content: space-evenly;
+    height: 100%;
 }
 
 br {
@@ -48,6 +49,7 @@ br {
 /* Main content container */
 .mainContentContainer {
     display: flex;
+    width: 100%;
     padding: 20px;
     order: 2;
 }
